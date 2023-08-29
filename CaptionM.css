@@ -1,0 +1,100 @@
+/* Style and position vjs-track-settings-colors */
+.vjs-track-settings-colors {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style and position vjs-track-settings-controls */
+.vjs-track-settings-controls {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style and position vjs-track-settings-fonts */
+.vjs-track-settings-fonts {
+  background-color: #f9f9f9;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  position: absolute;
+  top: 350px;
+  left: 50px;
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional improvements */
+.vjs-track-settings-colors h3,
+.vjs-track-settings-controls h3,
+.vjs-track-settings-fonts h3 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.vjs-track-settings-colors .color-option,
+.vjs-track-settings-controls .control-option,
+.vjs-track-settings-fonts .font-option {
+  margin-bottom: 10px;
+}
+
+.vjs-track-settings-colors .color-option label,
+.vjs-track-settings-controls .control-option label,
+.vjs-track-settings-fonts .font-option label {
+  display: flex;
+  align-items: center;
+}
+
+.vjs-track-settings-colors .color-option input[type="color"],
+.vjs-track-settings-controls .control-option input[type="checkbox"],
+.vjs-track-settings-fonts .font-option select {
+  margin-left: 10px;
+}
+
+.vjs-track-settings-colors .color-option input[type="color"]::-webkit-color-swatch-wrapper,
+.vjs-track-settings-colors .color-option input[type="color"]::-moz-color-swatch-wrapper,
+.vjs-track-settings-colors .color-option input[type="color"]::-ms-color-swatch-wrapper,
+.vjs-track-settings-colors .color-option input[type="color"]::-o-color-swatch-wrapper,
+.vjs-track-settings-colors .color-option input[type="color"]::-webkit-color-swatch,
+.vjs-track-settings-colors .color-option input[type="color"]::-moz-color-swatch,
+.vjs-track-settings-colors .color-option input[type="color"]::-ms-color-swatch,
+.vjs-track-settings-colors .color-option input[type="color"]::-o-color-swatch {
+  border-radius: 50%;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+}
+
+.vjs-track-settings-colors .color-option input[type="color"]::-webkit-color-swatch {
+  padding: 0;
+}
+
+.vjs-track-settings-colors .color-option input[type="color"]::-moz-color-swatch {
+  padding: 0;
+}
+
+.vjs-track-settings-colors .color-option input[type="color"]::-ms-color-swatch {
+  padding: 0;
+}
+
+.vjs-track-settings-colors .color-option input[type="color"]::-o-color-swatch {
+  padding: 0;
+}
