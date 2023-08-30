@@ -1,100 +1,73 @@
-/* Style and position vjs-track-settings-colors */
-.vjs-track-settings-colors {
-  background-color: #f2f2f2;
-  border-radius: 4px;
+/* Styling the vjs-text-track-settings component */
+.vjs-text-track-settings {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 10px;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  z-index: 9999;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s ease;
 }
 
-/* Style and position vjs-track-settings-controls */
-.vjs-track-settings-controls {
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  padding: 10px;
-  margin-top: 10px;
-  position: absolute;
-  top: 200px;
-  left: 50px;
-  z-index: 9999;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Style and position vjs-track-settings-fonts */
-.vjs-track-settings-fonts {
-  background-color: #f9f9f9;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  padding: 10px;
-  margin-top: 10px;
-  position: absolute;
-  top: 350px;
-  left: 50px;
-  z-index: 9999;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Additional improvements */
-.vjs-track-settings-colors h3,
-.vjs-track-settings-controls h3,
-.vjs-track-settings-fonts h3 {
-  margin-top: 0;
-  font-size: 16px;
+/* Styling the settings header */
+.vjs-text-track-settings .settings-header {
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
-.vjs-track-settings-colors .color-option,
-.vjs-track-settings-controls .control-option,
-.vjs-track-settings-fonts .font-option {
-  margin-bottom: 10px;
+/* Styling the settings list */
+.vjs-text-track-settings .settings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.vjs-track-settings-colors .color-option label,
-.vjs-track-settings-controls .control-option label,
-.vjs-track-settings-fonts .font-option label {
+/* Styling the settings list items */
+.vjs-text-track-settings .settings-list li {
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling the settings list item labels */
+.vjs-text-track-settings .settings-list li label {
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
 
-.vjs-track-settings-colors .color-option input[type="color"],
-.vjs-track-settings-controls .control-option input[type="checkbox"],
-.vjs-track-settings-fonts .font-option select {
-  margin-left: 10px;
+/* Styling the settings list item checkboxes */
+.vjs-text-track-settings .settings-list li input[type="checkbox"] {
+  margin-right: 5px;
 }
 
-.vjs-track-settings-colors .color-option input[type="color"]::-webkit-color-swatch-wrapper,
-.vjs-track-settings-colors .color-option input[type="color"]::-moz-color-swatch-wrapper,
-.vjs-track-settings-colors .color-option input[type="color"]::-ms-color-swatch-wrapper,
-.vjs-track-settings-colors .color-option input[type="color"]::-o-color-swatch-wrapper,
-.vjs-track-settings-colors .color-option input[type="color"]::-webkit-color-swatch,
-.vjs-track-settings-colors .color-option input[type="color"]::-moz-color-swatch,
-.vjs-track-settings-colors .color-option input[type="color"]::-ms-color-swatch,
-.vjs-track-settings-colors .color-option input[type="color"]::-o-color-swatch {
-  border-radius: 50%;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  overflow: hidden;
-  width: 20px;
-  height: 20px;
+/* Adding animation to the vjs-text-track-settings component */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.vjs-track-settings-colors .color-option input[type="color"]::-webkit-color-swatch {
-  padding: 0;
+.vjs-text-track-settings {
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-.vjs-track-settings-colors .color-option input[type="color"]::-moz-color-swatch {
-  padding: 0;
+/* Hover effect for vjs-text-track-settings component */
+.vjs-text-track-settings:hover {
+  background-color: #e0e0e0;
 }
 
-.vjs-track-settings-colors .color-option input[type="color"]::-ms-color-swatch {
-  padding: 0;
-}
-
-.vjs-track-settings-colors .color-option input[type="color"]::-o-color-swatch {
-  padding: 0;
+/* Hover effect for settings list items */
+.vjs-text-track-settings .settings-list li:hover {
+  background-color: #ddd;
+  color: #fff;
 }
